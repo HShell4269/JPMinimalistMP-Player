@@ -157,12 +157,8 @@
             document.getElementById('track-name').textContent = track.name;
             document.getElementById('_1').src = track.artwork;
             audio.src = track.url;
-            updateBackground(track.artwork);
         }
 
-        function updateBackground(artwork) {
-            document.getElementById('bg-artwork').style.backgroundImage = `url(${artwork})`;
-        }
 
         function playTrack() {
             audio.play();
